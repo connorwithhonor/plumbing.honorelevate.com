@@ -1,1 +1,990 @@
-{"id":"/index.html","path":"/index.html","sha":"3e04341100d63eee1322d047ee73d461fc6cd06a","mime_type":"text/html","size":34481,"site_id":"507149cb-84f0-4677-a1f2-cf9412851200","deploy_id":"69712802657d0c2cf8e2376d"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your Plumbing Business with AI | Honor Elevate</title>
+    <meta name="description" content="Never miss another customer call. AI-powered voice systems that handle unlimited calls 24/7, book appointments, and grow your plumbing business.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #1e3a8a;
+            --accent-orange: #f97316;
+            --dark-blue: #0f172a;
+            --light-gray: #f8fafc;
+            --medium-gray: #64748b;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-blue);
+            font-weight: 600;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .cta-button {
+            background: var(--accent-orange);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
+        }
+
+        .cta-button:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(249, 115, 22, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: white;
+            padding: 6rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://storage.googleapis.com/msgsndr/nVq2wkHlLPU3Y7TzlKwH/media/a92eefce-6e15-4c3e-af85-93191a07d5e7.jpg') center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text h1 span {
+            color: var(--accent-orange);
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-orange);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            margin-top: 0.5rem;
+        }
+
+        .hero-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .hero-form h3 {
+            color: var(--dark-blue);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-form p {
+            color: var(--medium-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Problem Section */
+        .problem {
+            padding: 6rem 2rem;
+            background: var(--light-gray);
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .problem-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+
+        .problem-card p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        /* Solution Section */
+        .solution {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .solution-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .solution-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .solution-features {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .feature-icon {
+            background: linear-gradient(135deg, var(--accent-orange), #fb923c);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text h3 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-text p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        /* AI Voice System Section */
+        .ai-voice {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary-blue), #1e40af);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-voice::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(249,115,22,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -250px;
+            right: -250px;
+        }
+
+        .offer-box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 2rem 0;
+            box-shadow: 0 8px 16px rgba(249,115,22,0.3);
+        }
+
+        .offer-box h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .offer-box ul {
+            text-align: left;
+            list-style: none;
+            margin: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .offer-box li {
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .offer-box li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .highlight-text {
+            background: rgba(249,115,22,0.2);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 6rem 2rem;
+            background: var(--light-gray);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .benefit-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.25rem;
+            color: var(--dark-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .benefit-card p {
+            color: var(--medium-gray);
+        }
+
+        /* Calendar Section */
+        .calendar-section {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .calendar-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .calendar-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .calendar-intro h2 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+
+        .calendar-intro p {
+            font-size: 1.25rem;
+            color: var(--medium-gray);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-brand {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand span {
+            color: var(--accent-orange);
+        }
+
+        .footer-tagline {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        .footer-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.1);
+            margin: 2rem 0;
+        }
+
+        .footer-credit {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .footer-credit a {
+            color: var(--accent-orange);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-credit a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-content {
+                grid-template-columns: 1fr;
+            }
+
+            .offer-box ul {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 4rem 1rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            .offer-box {
+                padding: 2rem 1.5rem;
+            }
+
+            .offer-box h2 {
+                font-size: 1.75rem;
+            }
+
+            .price-tag {
+                font-size: 2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                Honor<span>Elevate</span>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#solution">AI Solution</a></li>
+                <li><a href="#offer">Special Offer</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#calendar" class="cta-button">Book a Call</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text fade-in-up">
+                <h1>Stop Losing Plumbing Customers to <span>Missed Calls</span></h1>
+                <p>Your competitors are stealing your customers while you're on another job. Our AI Voice System answers every call, books appointments, and works 24/7—so you never miss another opportunity.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Always Available</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">21</div>
+                        <div class="stat-label">Simultaneous Calls</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$0</div>
+                        <div class="stat-label">Missed Revenue</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-form fade-in-up">
+                <h3>See How AI Can Transform Your Business</h3>
+                <p>Fill out the form below and discover how much revenue you're losing to missed calls.</p>
+                <iframe
+                    src="https://api.honorelevate.com/widget/form/U10tsp4FJd371gNaJSr7"
+                    style="width:100%;height:600px;border:none;border-radius:8px"
+                    id="inline-U10tsp4FJd371gNaJSr7"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Plumbing Company"
+                    data-height="1063"
+                    data-layout-iframe-id="inline-U10tsp4FJd371gNaJSr7"
+                    data-form-id="U10tsp4FJd371gNaJSr7"
+                    title="Plumbing Company"
+                ></iframe>
+                <script src="https://api.honorelevate.com/js/form_embed.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Every Missed Call is Money Down the Drain</h2>
+                <p>As a plumber, you know the struggle. Here's what's costing you thousands every month.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📞</div>
+                    <h3>Missed Calls = Lost Revenue</h3>
+                    <p>You're under a sink, in a crawl space, or driving between jobs. Meanwhile, potential customers are calling competitors who answer immediately.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>After-Hours Emergencies</h3>
+                    <p>Burst pipes don't wait for business hours. When customers need emergency service at 2 AM, they're calling someone—is it you?</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Expensive Answering Services</h3>
+                    <p>Traditional call centers charge per call, don't understand your business, and still miss opportunities. You're paying premium prices for mediocre results.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😤</div>
+                    <h3>Frustrated Customers</h3>
+                    <p>Nobody wants to leave a voicemail anymore. By the time you call back, they've already hired someone else. First to respond wins the job.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📊</div>
+                    <h3>No Tracking or Analytics</h3>
+                    <p>How many calls are you really missing? Where are they coming from? You're flying blind without data to grow your business strategically.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔧</div>
+                    <h3>Can't Scale Your Business</h3>
+                    <p>You're the bottleneck. Every call, every booking, every customer interaction requires YOUR time. There's only so many hours in a day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Meet Your New AI Team Member</h2>
+                <p>Imagine having an employee who never sleeps, never takes breaks, and handles unlimited customers simultaneously.</p>
+            </div>
+
+            <div class="solution-content">
+                <div class="solution-image">
+                    <img src="https://storage.googleapis.com/msgsndr/nVq2wkHlLPU3Y7TzlKwH/media/1fa2dae7-216c-4848-a576-c8b6eaae4cd2.jpg" alt="Professional plumber at work">
+                </div>
+                <div class="solution-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🤖</div>
+                        <div class="feature-text">
+                            <h3>AI Voice System</h3>
+                            <p>Natural-sounding conversations that handle inquiries, answer questions about your services, and qualify leads—all while you focus on the job at hand.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📅</div>
+                        <div class="feature-text">
+                            <h3>Instant Appointment Booking</h3>
+                            <p>Your AI assistant checks your calendar in real-time and books appointments instantly. No back-and-forth, no scheduling conflicts.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌐</div>
+                        <div class="feature-text">
+                            <h3>Multi-Channel Integration</h3>
+                            <p>Capture leads from your website, Facebook, Instagram, and phone calls—all managed by your AI system from a single dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solution-content" style="margin-top: 4rem;">
+                <div class="solution-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🗣️</div>
+                        <div class="feature-text">
+                            <h3>50+ Voice Options</h3>
+                            <p>Choose from 50 different voices with various accents. Whether you want professional, friendly, or local—we've got you covered. Meet Polly, your default AI receptionist.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-text">
+                            <h3>21 Simultaneous Conversations</h3>
+                            <p>While human receptionists can handle one call at a time, your AI handles 21 conversations simultaneously. Never send a customer to voicemail again.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <div class="feature-text">
+                            <h3>Custom-Built for Your Business</h3>
+                            <p>We don't give you a template—we build your AI system specifically for YOUR plumbing business, your services, and your processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-image">
+                    <img src="https://storage.googleapis.com/msgsndr/nVq2wkHlLPU3Y7TzlKwH/media/9a7d367b-c8fc-44cf-95c7-7de0fd6bbb79.jpeg" alt="Modern plumbing technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Voice Offer Section -->
+    <section class="ai-voice" id="offer">
+        <div class="section-container">
+            <div class="offer-box">
+                <h2>Limited Time Offer: Get Started for Just</h2>
+                <div class="price-tag">$97</div>
+                <p style="font-size: 1.25rem; margin-bottom: 2rem;">Your Complete AI Voice Agent System</p>
+
+                <ul>
+                    <li>Custom AI voice agent built for your business</li>
+                    <li>50+ professional voices to choose from</li>
+                    <li>Handles 21 calls simultaneously</li>
+                    <li>24/7/365 availability—never sleeps</li>
+                    <li>Integrated with your current website</li>
+                    <li>Social media channel integration (Facebook/Instagram)</li>
+                    <li>Instant appointment booking</li>
+                    <li>Real-time calendar synchronization</li>
+                    <li>Lead qualification and routing</li>
+                    <li>Detailed analytics and call tracking</li>
+                    <li>No additional per-call fees</li>
+                    <li>Full setup and integration included</li>
+                </ul>
+
+                <div class="highlight-text">
+                    <strong>You won't find this anywhere else.</strong> We custom-build your AI voice system from scratch, train it on your specific services, and hand it over to you ready to start booking appointments immediately.
+                </div>
+
+                <a href="#calendar" class="cta-button" style="display: inline-block; margin-top: 2rem; font-size: 1.25rem; padding: 1rem 2.5rem;">Get Your AI System Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Why Plumbing Businesses Choose Honor Elevate</h2>
+                <p>We specialize in AI growth architecture for service businesses. Here's what makes us different.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">🚀</div>
+                    <h3>Rapid Deployment</h3>
+                    <p>Your AI system is ready to go in days, not months. We handle everything from setup to integration.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">💰</div>
+                    <h3>Increase Revenue</h3>
+                    <p>Never miss another call means never miss another customer. Convert more leads into paying jobs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">⏱️</div>
+                    <h3>Save Time</h3>
+                    <p>Stop playing phone tag. Your AI handles scheduling, questions, and qualification automatically.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">📈</div>
+                    <h3>Scale Effortlessly</h3>
+                    <p>Handle 10 calls or 1,000 calls—your AI doesn't care. Grow without adding overhead.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Always Improving</h3>
+                    <p>Your AI learns from every interaction, getting smarter and more effective over time.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🤝</div>
+                    <h3>White-Glove Service</h3>
+                    <p>We build it, you own it. Plus ongoing support to ensure your success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section" id="calendar">
+        <div class="calendar-container">
+            <div class="calendar-intro">
+                <h2>Ready to Transform Your Plumbing Business?</h2>
+                <p>Book a free consultation to see how AI can work for your specific business. We'll analyze your current systems and show you exactly how to implement these solutions.</p>
+                <p style="margin-top: 1rem; color: var(--accent-orange); font-weight: 600;">No sales pressure. Just a genuine conversation about growing your business.</p>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <iframe src="https://site.honorelevate.com/widget/booking/2HfWAefFdYAVOk57vqZ3" style="width: 100%;border:none;overflow: hidden; min-height: 700px;" scrolling="no" id="h2ycIV9OZ2ojtQSewa5E_1769014307353"></iframe>
+                <script src="https://site.honorelevate.com/js/form_embed.js" type="text/javascript"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Honor<span>Elevate</span></div>
+            <div class="footer-tagline">AI Growth Architecture for Forward-Thinking Businesses</div>
+            <div class="footer-divider"></div>
+            <div class="footer-credit">
+                Crafted by <a href="#home">Connor</a>, AI Growth Architect at Honor Elevate
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #64748b;">
+                &copy; 2026 Honor Elevate. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.problem-card, .benefit-card, .feature-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Polly AI Chat Widget -->
+    <script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="697121d99ec2014330243869">
+    </script>
+</body>
+</html>
